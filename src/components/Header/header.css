@@ -2,15 +2,20 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 15px;
 }
-
+header img {
+  height: 68px;
+}
 header nav {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 15rem;
 }
-
 header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
-}
+}/*# sourceMappingURL=header.css.map */

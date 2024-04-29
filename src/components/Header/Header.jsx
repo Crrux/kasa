@@ -4,7 +4,7 @@ import './header.css'
 function Header() {
   return (
     <header>
-      <img src="src/assets/LogoKasa.png"></img>
+      <img src="src/assets/LogoHeader.png"></img>
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/apropos">A propos</Link>
