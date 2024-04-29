@@ -1,15 +1,16 @@
+import './home.css'
+import Card from '../../components/Card/Card'
+
 function Home() {
-  async function fetchjson() {
-    const response = await fetch('../src/database.json')
-    const logements = await response.json()
-    console.log(logements[0].title)
-    return logements
-  }
-  fetchjson()
   return (
-    <main>
-      <h1>home</h1>
-      <div id="cards"></div>
+    <main className="main">
+      <section className="main__titre">
+        <img src="./src/assets/BackgroundHome.png" />
+        <h1>Chez vous, partout et ailleurs</h1>
+      </section>
+      <div id="cards">
+        <Card />
+      </div>
     </main>
   )
 }
