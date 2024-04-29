@@ -2,7 +2,7 @@ function Home() {
   async function fetchjson() {
     const response = await fetch('../src/database.json')
     const logements = await response.json()
-    console.log(logements)
+    console.log(logements[0].title)
     return logements
   }
   fetchjson()

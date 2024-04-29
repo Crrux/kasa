@@ -5,12 +5,16 @@
   /* color-scheme: light dark; */
   /* background-color: #242424; */
 }
-
+#root {
+  max-width: 1280px;
+}
 a {
   text-decoration: none;
 }
 
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
