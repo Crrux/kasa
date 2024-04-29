@@ -1,4 +1,4 @@
-function apropos() {
+function APropos() {
   return (
     <div>
       <h1>a propos</h1>
@@ -6,4 +6,4 @@ function apropos() {
   )
 }
 
-export default apropos
+export default APropos

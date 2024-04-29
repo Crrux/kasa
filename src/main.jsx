@@ -1,17 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import './index.css'
+
+import Header from './components/Header.jsx'
+
 import Home from './pages/home/home'
 import Fiche from './pages/fiche_logement/fichelogement.jsx'
-import Notfound from './pages/NotFound/NotFound.jsx'
+import APropos from './pages/APropos/APropos.jsx'
+import Error from './pages/NotFound/NotFound.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fichelogement" element={<Fiche />} />
-        <Route path="/404NotFound" element={<Notfound />} />
+        <Route path="/APropos" element={<APropos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>
