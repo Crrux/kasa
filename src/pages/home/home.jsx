@@ -7,9 +7,10 @@ function Home() {
   }
   fetchjson()
   return (
-    <div>
+    <main>
       <h1>home</h1>
-    </div>
+      <div id="cards"></div>
+    </main>
   )
 }
 

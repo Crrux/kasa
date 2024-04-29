@@ -1,8 +1,8 @@
 function APropos() {
   return (
-    <div>
+    <main>
       <h1>a propos</h1>
-    </div>
+    </main>
   )
 }
 
