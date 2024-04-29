@@ -1,4 +1,3 @@
-import './style/notfound.css'
 function Error() {
   return (
     <div>
