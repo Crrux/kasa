@@ -8,9 +8,7 @@ function Home() {
         <img src="./src/assets/BackgroundHome.png" />
         <h1>Chez vous, partout et ailleurs</h1>
       </section>
-      <div id="cards">
-        <Card />
-      </div>
+      <Card />
     </main>
   )
 }

@@ -18,7 +18,7 @@ function Card() {
   }, [])
 
   return (
-    <div>
+    <div id="cards">
       {logements.length > 0 ? (
         logements.map((logement) => (
           <article key={logement.id}>
