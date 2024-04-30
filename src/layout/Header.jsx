@@ -4,7 +4,10 @@ import './header.css'
 function Header() {
   return (
     <header>
-      <img src="/src/assets/LogoHeader.png"></img>
+      <Link to="/">
+        <img src="/src/assets/LogoHeader.png"></img>
+      </Link>
+
       <nav>
         <Link to="/">Accueil</Link>
         <Link to="/apropos">A propos</Link>
