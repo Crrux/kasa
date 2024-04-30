@@ -29,13 +29,27 @@ main .main__titre h1 {
 main #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  background-image: url("");
+  gap: 50px;
+  margin: 25px 0 25px 0;
+  padding: 56px 50px 56px 50px;
 }
 main #cards article {
-  text-align: center;
-  width: 25rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 18rem;
+  height: 340px;
+  padding: 10px;
+  border-radius: 10px;
 }
-main #cards article img {
-  width: 25rem;
+main #cards article h2 {
+  display: flex;
+  width: 6rem;
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=home.css.map */

@@ -21,10 +21,15 @@ function Card() {
     <div id="cards">
       {logements.length > 0 ? (
         logements.map((logement) => (
-          <article key={logement.id}>
+          <article
+            key={logement.id}
+            style={{
+              backgroundImage: `url(${logement.cover})`,
+              backgroundSize: 'cover',
+            }}
+          >
             {' '}
             {/* Add a unique key for each item */}
-            <img src={logement.cover} alt={logement.title} />
             <h2>{logement.title}</h2>
           </article>
         ))
