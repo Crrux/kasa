@@ -28,6 +28,7 @@ function Card() {
                 backgroundImage: `url(${logement.cover})`,
                 backgroundSize: 'cover',
               }}
+              aria-label={logement.title}
             >
               {' '}
               {/* Add a unique key for each item */}
