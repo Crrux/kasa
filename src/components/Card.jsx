@@ -7,7 +7,7 @@ function Card() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('../src/database.json')
+        const response = await fetch('/src/database.json')
         const data = await response.json()
         setLogements(data)
       } catch (error) {
