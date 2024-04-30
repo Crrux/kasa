@@ -17,7 +17,7 @@ function Fiche() {
   useEffect(() => {
     const dataLogement = async () => {
       try {
-        const response = await fetch('../src/database.json')
+        const response = await fetch('/src/database.json')
         const data = await response.json()
         setLogements(data)
       } catch (error) {
@@ -27,6 +27,15 @@ function Fiche() {
     dataLogement()
   }, [])
   let ficheLogement = getLogement(id, logements)
+  let hostname = ''
+  let srcPicture = ''
+  if (ficheLogement.host) {
+    hostname = ficheLogement.host.name
+    srcPicture = ficheLogement.host.picture
+  } else {
+    hostname = 'Chargement...'
+    srcPicture = 'Chargement...'
+  }
   return (
     <main>
       <img src={ficheLogement.cover}></img>
@@ -34,7 +43,10 @@ function Fiche() {
         <h1>{ficheLogement.title}</h1>
         <h2>{ficheLogement.location}</h2>
       </div>
-      <div></div>
+      <div>
+        <p>{hostname}</p>
+        <img src={srcPicture} />
+      </div>
     </main>
   )
 }
