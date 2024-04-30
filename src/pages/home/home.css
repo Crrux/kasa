@@ -38,7 +38,16 @@ main #cards {
   margin: 25px 0 25px 0;
   padding: 56px 50px 56px 50px;
 }
-main #cards article {
+main #cards a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  flex-grow: 1;
+  height: 340px;
+  border-radius: 10px;
+}
+main #cards a article {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -48,7 +57,7 @@ main #cards article {
   padding: 10px;
   border-radius: 10px;
 }
-main #cards article h2 {
+main #cards a article h2 {
   display: flex;
   width: 6rem;
   color: white;

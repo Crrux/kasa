@@ -19,12 +19,11 @@ function Card() {
   }, [])
 
   return (
-    <Link to={`/fichelogement/${logements.map((logement) => logement.id)}`}>
-      <div id="cards">
-        {logements.length > 0 ? (
-          logements.map((logement) => (
+    <div id="cards">
+      {logements.length > 0 ? (
+        logements.map((logement) => (
+          <Link key={logement.id} to={`/fichelogement/${logement.id}`}>
             <article
-              key={logement.id}
               style={{
                 backgroundImage: `url(${logement.cover})`,
                 backgroundSize: 'cover',
@@ -34,12 +33,12 @@ function Card() {
               {/* Add a unique key for each item */}
               <h2>{logement.title}</h2>
             </article>
-          ))
-        ) : (
-          <p>Loading data...</p>
-        )}
-      </div>
-    </Link>
+          </Link>
+        ))
+      ) : (
+        <p>Loading data...</p>
+      )}
+    </div>
   )
 }
 
