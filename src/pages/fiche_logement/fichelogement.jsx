@@ -27,7 +27,6 @@ function Fiche() {
     dataLogement()
   }, [])
   let ficheLogement = getLogement(id, logements)
-
   return (
     <main>
       <img src={ficheLogement.cover}></img>
