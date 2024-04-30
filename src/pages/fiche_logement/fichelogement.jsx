@@ -27,13 +27,15 @@ function Fiche() {
     dataLogement()
   }, [])
   let ficheLogement = getLogement(id, logements)
-  console.log(id)
-  console.log(ficheLogement)
 
   return (
     <main>
-      <h1>{ficheLogement.title}</h1>
-      <p></p>
+      <img src={ficheLogement.cover}></img>
+      <div>
+        <h1>{ficheLogement.title}</h1>
+        <h2>{ficheLogement.location}</h2>
+      </div>
+      <div></div>
     </main>
   )
 }
