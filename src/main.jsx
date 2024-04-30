@@ -18,8 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/fichelogement" element={<Fiche />} />
         <Route path="/APropos" element={<APropos />} />
+        <Route path="/fichelogement/:id" element={<Fiche />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
