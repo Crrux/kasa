@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img src="/src/assets/LogoHeader.png"></img>
+        <img src="/src/assets/LogoHeader.png" alt="Logo Kasa"></img>
       </Link>
 
       <nav>
