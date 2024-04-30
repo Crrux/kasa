@@ -29,7 +29,7 @@ main .main__titre h1 {
 main #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   border-radius: 25px;
   background-color: #F6F6F6;
@@ -42,7 +42,8 @@ main #cards article {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 18rem;
+  flex-grow: 1;
+  width: 25%;
   height: 340px;
   padding: 10px;
   border-radius: 10px;
