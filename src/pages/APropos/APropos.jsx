@@ -1,7 +1,10 @@
+import Banner from '../../components/Banner/Banner'
+import bannerImg from '/assets/BackgroundBannerAPropos.jpeg'
+
 function APropos() {
   return (
     <main>
-      <h1>a propos</h1>
+      <Banner img={bannerImg} />
     </main>
   )
 }

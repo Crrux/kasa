@@ -1,13 +1,11 @@
 import Card from '../../components/Card/Card'
-import bannerImg from '/assets/BackgroundHome.png'
+import Banner from '../../components/Banner/Banner'
+import bannerImg from '/assets/BackgroundBannerHome.png'
 
 function Home() {
   return (
     <main className="main">
-      <section className="main__titre">
-        <img src={bannerImg} />
-        <h1>Chez vous, partout et ailleurs</h1>
-      </section>
+      <Banner img={bannerImg} text={'Chez vous, partout et ailleurs'} />
       <Card />
     </main>
   )
