@@ -125,6 +125,12 @@ footer {
   display: none;
 }
 
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .collapsible .collapsible-button {
   background-color: #eee;
   color: #444;
@@ -147,6 +153,7 @@ footer {
   transition: max-height 0.2s ease-out;
 }
 .collapsible .collapsible-content.active {
+  border-radius: 0 0 15px 15px;
   max-height: 500px;
 }
 

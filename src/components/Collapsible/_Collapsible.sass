@@ -1,4 +1,7 @@
 .collapsible
+    display: flex
+    flex-direction: column
+    width: fit-content
     .collapsible-button
         background-color: #eee
         color: #444
@@ -18,4 +21,5 @@
         overflow: hidden
         transition: max-height 0.2s ease-out
     .collapsible-content.active
+        border-radius: 0 0 15px 15px
         max-height: 500px

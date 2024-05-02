@@ -17,6 +17,13 @@ function Collapsible() {
       </button>
       <div className={`collapsible-content ${isActive ? 'active' : ''}`}>
         <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
+        <p>Lorem ipsum...</p>
       </div>
     </div>
   )
