@@ -1,5 +1,6 @@
 import { useParams, redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Caroussel from '../../components/caroussel/Caroussel'
 
 function Fiche() {
   let { id } = useParams()
@@ -12,11 +13,9 @@ function Fiche() {
         const data = await response.json()
         const logement = data.find((logement) => logement.id === id)
         setLogements(logement)
-        if (!logement) {
-          return redirect('/404')
-        }
       } catch (error) {
         console.error('Error fetching data:', error)
+        redirect('/')
         /*  Ici gérer la redirection vers la page erreur */
       }
     }
@@ -24,10 +23,10 @@ function Fiche() {
   }, [logement, id])
 
   return (
-    <main>
+    <main id="fichelogement">
+      <Caroussel images={logement.pictures} />
       {logement ? (
         <>
-          <img src={logement.cover}></img>
           <div>
             <h1>{logement.title}</h1>
             <h2>{logement.location}</h2>
