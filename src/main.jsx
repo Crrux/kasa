@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import './index.css'
+import './sass/index.css'
 
 import Header from './layout/Header.jsx'
 import Footer from './layout/Footer.jsx'

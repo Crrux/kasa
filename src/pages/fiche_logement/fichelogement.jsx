@@ -14,18 +14,22 @@ function getLogement(idLogement, logements) {
 function Fiche() {
   let { id } = useParams()
   const [logements, setLogements] = useState([])
+
   useEffect(() => {
     const dataLogement = async () => {
       try {
-        const response = await fetch('/src/database.json')
+        const response = await fetch('/database/database.json')
         const data = await response.json()
+        /* data.filter() */
         setLogements(data)
       } catch (error) {
         console.error('Error fetching data:', error)
+        /*  Ici gérer la redirection vers la page erreur */
       }
     }
     dataLogement()
   }, [])
+
   let ficheLogement = getLogement(id, logements)
   let hostname = ''
   let srcPicture = ''
@@ -34,7 +38,7 @@ function Fiche() {
     srcPicture = ficheLogement.host.picture
   } else {
     hostname = 'Chargement...'
-    srcPicture = 'Chargement...'
+    srcPicture = ''
   }
   return (
     <main>

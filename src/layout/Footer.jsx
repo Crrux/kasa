@@ -1,9 +1,9 @@
-import './footer.css'
+import logoFooter from '/assets/LogoFooter.png'
 
 function Footer() {
   return (
     <footer>
-      <img src="/src/assets/LogoFooter.png" alt="Logo Kasa"></img>
+      <img src={logoFooter} alt="Logo Kasa"></img>
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
