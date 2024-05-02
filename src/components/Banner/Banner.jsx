@@ -1,17 +1,16 @@
+import PropTypes from 'prop-types'
+
 function Banner({ img, text }) {
   return (
-    <main className="main">
-      <section className="main__titre">
-        <img src={img} />
-        {text && <h1>{text}</h1>}
-      </section>
-    </main>
+    <section className="Banner" style={{ backgroundImage: `url(${img})` }}>
+      {text && <h1>{text}</h1>}
+    </section>
   )
 }
 
-export default Banner
-
-Banner.PropTypes = {
-  img: String,
-  text: String,
+Banner.propTypes = {
+  img: PropTypes.string.isRequired,
+  text: PropTypes.string,
 }
+
+export default Banner
