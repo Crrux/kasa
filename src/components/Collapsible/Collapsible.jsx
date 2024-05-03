@@ -3,8 +3,12 @@ import PropTypes from 'prop-types'
 
 function Collapsible({ titre, text, string }) {
   const [isActive, setIsActive] = useState(false)
+  const [isFirstClick, setIsFirstClick] = useState(true)
   const handleClick = () => {
     setIsActive(!isActive)
+    if (isFirstClick) {
+      setIsFirstClick(false)
+    }
   }
   return (
     <div className="collapsible">
@@ -15,11 +19,16 @@ function Collapsible({ titre, text, string }) {
           className={`collapsible-button ${isActive ? 'active' : ''}`}
           onClick={handleClick}
         >
-          {isActive ? (
-            <i className="fa-solid fa-chevron-down"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-up"></i>
-          )}
+          <i
+            id="icon"
+            className={`fa-solid fa-chevron-up ${
+              !isFirstClick
+                ? isActive
+                  ? 'icon-down-rotated'
+                  : 'icon-up-rotated'
+                : ''
+            }`}
+          ></i>
         </button>
       </div>
 
