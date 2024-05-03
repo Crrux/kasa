@@ -8,6 +8,35 @@
         overflow: hidden
         img
             width: 100%
+    .info-logement
+        display: flex
+        flex-direction: row
+        .info-logement-gauche, .info-logement-droit
+            width: 50%
+        .info-logement-gauche
+            h1
+                color: red
+        .info-logement-droit
+            display: flex
+            align-items: flex-end
+            flex-direction: column
+            .info-logement-droit-host
+                display: flex
+                align-items: center
+                gap: 8px
+                p
+                    display: flex
+                    text-align: end
+                    align-items: center
+                    width: 5rem
+                    color: red
+                    font-size: 1.2rem
+                img
+                    border-radius: 50%
+                    height: 4rem
+            .info-logement-droit-hostrating
+                i
+                    color: #FF6060
     .zoneDeroulant
         display: flex
         flex-direction: row

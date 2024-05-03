@@ -28,14 +28,26 @@ function Fiche() {
       <Caroussel images={logement.pictures} />
       {logement ? (
         <>
-          <div>
-            <h1>{logement.title}</h1>
-            <h2>{logement.location}</h2>
+          <div className="info-logement">
+            <div className="info-logement-gauche">
+              <div>
+                <h1>{logement.title}</h1>
+                <h2>{logement.location}</h2>
+              </div>
+              <div className="info-logement-gauche-tags"></div>
+            </div>
+            <div className="info-logement-droit">
+              <div className="info-logement-droit-host">
+                <p>{logement.host?.name || 'Chargement...'}</p>
+                <img src={logement.host?.picture || ''} />
+              </div>
+              <div className="info-logement-droit-hostrating">
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-regular fa-star"></i>
+              </div>
+            </div>
           </div>
-          <div>
-            <p>{logement.host?.name || 'Chargement...'}</p>
-            <img src={logement.host?.picture || ''} />
-          </div>
+
           <div className="zoneDeroulant">
             <Collapsible
               titre={'Description'}
