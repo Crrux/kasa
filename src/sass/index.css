@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 15px;
+  margin: 45px auto 50px auto;
 }
 header img {
   height: 68px;
@@ -114,7 +114,6 @@ footer {
 }
 
 .Banner {
-  margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
   background-size: cover;
@@ -202,9 +201,12 @@ body {
 }
 
 header, main {
-  margin: auto;
   width: 100%;
   max-width: 1280px;
+}
+
+main {
+  margin: 0 auto 0 auto;
 }
 
 footer {
