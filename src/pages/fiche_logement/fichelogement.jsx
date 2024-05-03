@@ -29,7 +29,7 @@ function Fiche() {
       <Caroussel images={logement.pictures} />
       {logement ? (
         <>
-          <div className="info-logement">
+          <section className="info-logement">
             <div className="info-logement-gauche">
               <div>
                 <h1>{logement.title}</h1>
@@ -62,7 +62,7 @@ function Fiche() {
                 <Rating stars={Number(logement.rating)}></Rating>
               </div>
             </div>
-          </div>
+          </section>
 
           <div className="zoneDeroulant">
             <Collapsible

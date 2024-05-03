@@ -1,6 +1,6 @@
 function Caroussel(images) {
   return (
-    <div className="Carroussel">
+    <section className="Carroussel">
       <div>
         {images.images ? (
           images.images.map((image) => <img key={image} src={image} />)
@@ -8,7 +8,7 @@ function Caroussel(images) {
           <p>Loading data...</p>
         )}
       </div>
-    </div>
+    </section>
   )
 }
 
