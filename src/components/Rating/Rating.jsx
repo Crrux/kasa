@@ -1,18 +1,16 @@
 import PropTypes from 'prop-types'
 function Rating({ stars }) {
-  const filledStars = Math.floor(stars)
-  const emptyStars = Math.max(5 - stars, 0)
   return (
     <div className="star-rating">
       {stars ? (
         <>
           {' '}
-          {Array(filledStars)
+          {Array(stars)
             .fill(null)
             .map((_, index) => (
               <i key={index} className="fa-solid fa-star"></i>
             ))}
-          {Array(emptyStars)
+          {Array(5 - stars)
             .fill(null)
             .map((_, index) => (
               <i key={index} className="fa-regular fa-star"></i>
