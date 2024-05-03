@@ -2,6 +2,7 @@ import { useParams, redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Caroussel from '../../components/caroussel/Caroussel'
 import Collapsible from '../../components/Collapsible/Collapsible'
+import Rating from '../../components/Rating/Rating'
 
 function Fiche() {
   let { id } = useParams()
@@ -42,8 +43,7 @@ function Fiche() {
                 <img src={logement.host?.picture || ''} />
               </div>
               <div className="info-logement-droit-hostrating">
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-regular fa-star"></i>
+                <Rating stars={Number(logement.rating)}></Rating>
               </div>
             </div>
           </div>
