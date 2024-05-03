@@ -16,11 +16,23 @@
         .info-logement-gauche
             h1
                 color: #FF6060
+            &-tagscontainer
+                display: flex
+                flex-direction: row
+                gap: 10px
+                &-tags
+                    display: flex
+                    justify-content: center
+                    min-width: 100px
+                    padding: 0 10px 0 10px
+                    border-radius: 10px
+                    background-color: #FF6060
+                    color: white
         .info-logement-droit
             display: flex
             align-items: flex-end
             flex-direction: column
-            .info-logement-droit-host
+            &-host
                 display: flex
                 align-items: center
                 gap: 8px
@@ -34,7 +46,7 @@
                 img
                     border-radius: 50%
                     height: 4rem
-            .info-logement-droit-hostrating
+            &-hostrating
                 i
                     color: #FF6060
     .zoneDeroulant

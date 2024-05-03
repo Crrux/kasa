@@ -1,6 +1,6 @@
 import { useParams, redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Caroussel from '../../components/caroussel/Caroussel'
+import Caroussel from '../../components/Caroussel/Caroussel'
 import Collapsible from '../../components/Collapsible/Collapsible'
 import Rating from '../../components/Rating/Rating'
 
@@ -35,7 +35,23 @@ function Fiche() {
                 <h1>{logement.title}</h1>
                 <h2>{logement.location}</h2>
               </div>
-              <div className="info-logement-gauche-tags"></div>
+              <div className="info-logement-gauche-tagscontainer">
+                {logement.tags ? (
+                  <>
+                    {' '}
+                    {logement.tags.map((tags) => (
+                      <p
+                        key={tags}
+                        className="info-logement-gauche-tagscontainer-tags"
+                      >
+                        {tags}
+                      </p>
+                    ))}
+                  </>
+                ) : (
+                  ''
+                )}
+              </div>
             </div>
             <div className="info-logement-droit">
               <div className="info-logement-droit-host">

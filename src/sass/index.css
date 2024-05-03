@@ -50,17 +50,31 @@ footer {
 #fichelogement .info-logement .info-logement-gauche h1 {
   color: #FF6060;
 }
+#fichelogement .info-logement .info-logement-gauche-tagscontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#fichelogement .info-logement .info-logement-gauche-tagscontainer-tags {
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: white;
+}
 #fichelogement .info-logement .info-logement-droit {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
 }
-#fichelogement .info-logement .info-logement-droit .info-logement-droit-host {
+#fichelogement .info-logement .info-logement-droit-host {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-#fichelogement .info-logement .info-logement-droit .info-logement-droit-host p {
+#fichelogement .info-logement .info-logement-droit-host p {
   display: flex;
   text-align: end;
   align-items: center;
@@ -68,11 +82,11 @@ footer {
   color: red;
   font-size: 1.2rem;
 }
-#fichelogement .info-logement .info-logement-droit .info-logement-droit-host img {
+#fichelogement .info-logement .info-logement-droit-host img {
   border-radius: 50%;
   height: 4rem;
 }
-#fichelogement .info-logement .info-logement-droit .info-logement-droit-hostrating i {
+#fichelogement .info-logement .info-logement-droit-hostrating i {
   color: #FF6060;
 }
 #fichelogement .zoneDeroulant {
