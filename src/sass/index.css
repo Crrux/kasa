@@ -40,6 +40,41 @@ footer {
 #fichelogement .fichelogement--divimage img {
   width: 100%;
 }
+#fichelogement .info-logement {
+  display: flex;
+  flex-direction: row;
+}
+#fichelogement .info-logement .info-logement-gauche, #fichelogement .info-logement .info-logement-droit {
+  width: 50%;
+}
+#fichelogement .info-logement .info-logement-gauche h1 {
+  color: red;
+}
+#fichelogement .info-logement .info-logement-droit {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#fichelogement .info-logement .info-logement-droit .info-logement-droit-host {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#fichelogement .info-logement .info-logement-droit .info-logement-droit-host p {
+  display: flex;
+  text-align: end;
+  align-items: center;
+  width: 5rem;
+  color: red;
+  font-size: 1.2rem;
+}
+#fichelogement .info-logement .info-logement-droit .info-logement-droit-host img {
+  border-radius: 50%;
+  height: 4rem;
+}
+#fichelogement .info-logement .info-logement-droit .info-logement-droit-hostrating i {
+  color: #FF6060;
+}
 #fichelogement .zoneDeroulant {
   display: flex;
   flex-direction: row;
