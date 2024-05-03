@@ -1,6 +1,7 @@
 import { useParams, redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Caroussel from '../../components/caroussel/Caroussel'
+import Collapsible from '../../components/Collapsible/Collapsible'
 
 function Fiche() {
   let { id } = useParams()
@@ -34,6 +35,16 @@ function Fiche() {
           <div>
             <p>{logement.host?.name || 'Chargement...'}</p>
             <img src={logement.host?.picture || ''} />
+          </div>
+          <div className="zoneDeroulant">
+            <Collapsible
+              titre={'Description'}
+              string={logement.description}
+            ></Collapsible>
+            <Collapsible
+              titre={'Equipments'}
+              text={logement.equipments}
+            ></Collapsible>
           </div>
         </>
       ) : (
