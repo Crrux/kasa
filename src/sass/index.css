@@ -48,7 +48,7 @@ footer {
   width: 50%;
 }
 #fichelogement .info-logement .info-logement-gauche h1 {
-  color: red;
+  color: #FF6060;
 }
 #fichelogement .info-logement .info-logement-droit {
   display: flex;
