@@ -1,9 +1,13 @@
+import './test.css'
 import Collapsible from '../../components/Collapsible/Collapsible'
 
 function Test() {
   return (
     <div>
-      <Collapsible text={['non', 'oui', '1', '2']}></Collapsible>
+      <Collapsible
+        titre={'titre test'}
+        text={['non', 'oui', '1', '2']}
+      ></Collapsible>
     </div>
   )
 }
