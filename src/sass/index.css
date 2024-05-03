@@ -50,6 +50,17 @@ footer {
   width: 50%;
 }
 
+.APropos .APropos-deroulant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.APropos .APropos-deroulant .collapsible {
+  width: 90%;
+}
+
 .mainError {
   color: red;
   text-align: center;
