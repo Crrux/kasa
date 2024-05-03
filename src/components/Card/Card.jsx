@@ -30,8 +30,6 @@ function Card() {
               }}
               aria-label={logement.title}
             >
-              {' '}
-              {/* Add a unique key for each item */}
               <h2>{logement.title}</h2>
             </article>
           </Link>
