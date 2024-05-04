@@ -323,8 +323,7 @@ body {
 }
 
 header, main {
-  width: 100%;
-  max-width: 1280px;
+  width: 90%;
 }
 
 main {
