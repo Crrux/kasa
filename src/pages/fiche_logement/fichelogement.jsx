@@ -1,8 +1,9 @@
 import { useParams, redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import Caroussel from '../../components/Caroussel/Caroussel'
+
 import Collapsible from '../../components/Collapsible/Collapsible'
 import Rating from '../../components/Rating/Rating'
+import Carousel from '../../components/Caroussel/Caroussel'
 
 function Fiche() {
   let { id } = useParams()
@@ -26,7 +27,8 @@ function Fiche() {
 
   return (
     <main id="fichelogement">
-      <Caroussel images={logement.pictures} />
+      {logement.pictures ? <Carousel data={logement.pictures}></Carousel> : ''}
+
       {logement ? (
         <>
           <section className="info-logement">
