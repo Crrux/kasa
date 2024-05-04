@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 function Carousel({ data }) {
-  console.log(data)
   const [slideIndex, setSlideIndex] = useState(1)
 
   useEffect(() => {

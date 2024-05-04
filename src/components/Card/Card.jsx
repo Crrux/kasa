@@ -19,7 +19,7 @@ function Card() {
   }, [])
 
   return (
-    <div id="cards">
+    <div className="cards">
       {logements.length > 0 ? (
         logements.map((logement) => (
           <Link key={logement.id} to={`/fichelogement/${logement.id}`}>
@@ -30,7 +30,9 @@ function Card() {
               }}
               aria-label={logement.title}
             >
-              <h2>{logement.title}</h2>
+              <div className="cards__gradient">
+                <h2>{logement.title}</h2>
+              </div>
             </article>
           </Link>
         ))
