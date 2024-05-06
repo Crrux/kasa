@@ -7,12 +7,15 @@
         overflow: hidden
         img
             width: 100%
+
     .info-logement
         display: flex
         flex-direction: row
         margin-bottom: 20px
+
         .info-logement-gauche, .info-logement-droit
             width: 50%
+
         .info-logement-gauche
             font-size: 13px
             h1
@@ -35,6 +38,7 @@
                     color: white
                     padding: 0 10px 0 10px
                     margin: 0
+
         .info-logement-droit
             display: flex
             align-items: flex-end
@@ -56,6 +60,7 @@
             &-hostrating
                 i
                     color: #FF6060
+
         @media screen and ( max-width: $layout-breakpoint-small )
             flex-direction: column
             .info-logement-gauche, .info-logement-droit
@@ -64,12 +69,10 @@
                 &-tagscontainer
                     flex-wrap: wrap
                     gap: 10px
-
                     &-tags
                         width: 1rem
                         min-height: 18px
                         border-radius: 5px
-
             .info-logement-droit
                 flex-direction: row-reverse
                 justify-content: space-between

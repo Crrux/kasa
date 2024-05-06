@@ -23,7 +23,6 @@ function Fiche() {
           throw new Error('Logement not found') // Create and throw an error
         }
       } catch (error) {
-        console.error('Error fetching data:', error)
         if (logementNotFound) {
           // return redirect('/404')
           navigate(`/LogementNotFound-${id}`)
