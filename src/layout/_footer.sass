@@ -1,9 +1,17 @@
 $variablepadding: 15px
 
 footer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
     margin-top: 50px
     background-color: black
     color: white
     text-align: center
     padding-top: $variablepadding
     padding-bottom: $variablepadding
+    @media (max-width: $layout-breakpoint-small)
+        height: 220px
+    p
+        width: 27%

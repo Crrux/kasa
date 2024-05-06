@@ -7,29 +7,52 @@ header {
 header img {
   height: 68px;
 }
+@media (max-width: 767.98px) {
+  header img {
+    height: 40px;
+  }
+}
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 15rem;
+  gap: 30px;
+}
+@media (max-width: 767.98px) {
+  header nav {
+    gap: 5px;
+  }
 }
 header nav a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px;
+  font-size: 1em;
 }
 header nav .active {
   text-decoration: underline;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 50px;
   background-color: black;
   color: white;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media (max-width: 767.98px) {
+  footer {
+    height: 220px;
+  }
+}
+footer p {
+  width: 27%;
 }
 
 #fichelogement .fichelogement--divimage {
@@ -100,6 +123,15 @@ footer {
 #fichelogement .zoneDeroulant .collapsible {
   width: 50%;
 }
+@media screen and (max-width: 767.98px) {
+  #fichelogement .zoneDeroulant {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #fichelogement .zoneDeroulant .collapsible {
+    width: 100%;
+  }
+}
 
 .APropos .APropos-deroulant {
   display: flex;
@@ -111,17 +143,28 @@ footer {
 .APropos .APropos-deroulant .collapsible {
   width: 90%;
 }
+@media (max-width: 767.98px) {
+  .APropos .APropos-deroulant .collapsible {
+    width: 100%;
+  }
+}
 
 .mainError {
   color: red;
   text-align: center;
+  font-weight: 600;
 }
 .mainError h1 {
-  font-size: 10rem;
+  font-size: 6rem;
   margin: 0;
 }
+.mainError p {
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
 .mainError a {
-  margin-top: 3rem;
+  text-decoration: underline;
+  color: black;
 }
 
 .cards {
@@ -133,6 +176,15 @@ footer {
   background-image: url("");
   margin: 25px 0 25px 0;
   padding: 56px 50px 56px 50px;
+}
+@media screen and (max-width: 767.98px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    background: none;
+  }
 }
 .cards a, .cards article {
   display: flex;
@@ -152,6 +204,7 @@ footer {
   display: flex;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
   align-items: flex-end;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.2) 99.99%, rgba(0, 0, 0, 0.5) 100%);
 }
@@ -163,26 +216,35 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-  width: 100%;
-  height: 230px;
-  border-radius: 25px;
 }
 .Banner h1 {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 25px;
-  width: 100%;
-  height: 230px;
-  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.Banner, .Banner h1 {
+  height: 230px;
+  border-radius: 25px;
+  width: 100%;
+  font-size: 35px;
+}
+@media (max-width: 767.98px) {
+  .Banner, .Banner h1 {
+    height: 110px;
+    text-align: left;
+    padding-left: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
 }
 
 .Carroussel {
@@ -314,6 +376,11 @@ footer {
 #root {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767.98px) {
+  #root {
+    font-size: 10px;
+  }
 }
 
 a {

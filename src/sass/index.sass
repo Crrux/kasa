@@ -22,8 +22,10 @@ $layout-breakpoint-tablet-max: 1024px
 
 #root
     display: flex
-
     flex-direction: column
+
+    @media (max-width: $layout-breakpoint-small)
+        font-size: 10px
 
 a
     text-decoration: none

@@ -5,15 +5,20 @@ header
     margin: 45px auto 50px auto
     img
         height: 68px
+        @media (max-width: $layout-breakpoint-small)
+            height: 40px
     nav
         display: flex
         flex-direction: row
         justify-content: space-between
-        width: 15rem
+        gap: 30px
+        @media (max-width: $layout-breakpoint-small)
+            gap: 5px
         a
             display: flex
             justify-content: center
             align-items: center
             padding: 15px
+            font-size: 1em
         .active
             text-decoration: underline
