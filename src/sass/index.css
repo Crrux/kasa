@@ -19,6 +19,9 @@ header nav a {
   align-items: center;
   padding: 15px;
 }
+header nav .active {
+  text-decoration: underline;
+}
 
 footer {
   margin-top: 50px;
@@ -33,7 +36,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
   height: 400px;
   overflow: hidden;
 }
@@ -173,6 +175,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 25px;
   width: 100%;
@@ -303,7 +306,7 @@ footer {
   }
 }
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
