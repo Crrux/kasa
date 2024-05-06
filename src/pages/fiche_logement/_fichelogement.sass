@@ -10,23 +10,31 @@
     .info-logement
         display: flex
         flex-direction: row
+        margin-bottom: 20px
         .info-logement-gauche, .info-logement-droit
             width: 50%
         .info-logement-gauche
+            font-size: 13px
             h1
                 color: #FF6060
+                margin: 0
+            h2
+                margin: 0
             &-tagscontainer
                 display: flex
                 flex-direction: row
                 gap: 10px
+                margin-top: 20px
                 &-tags
                     display: flex
                     justify-content: center
+                    align-items: center
                     min-width: 100px
-                    padding: 0 10px 0 10px
                     border-radius: 10px
                     background-color: #FF6060
                     color: white
+                    padding: 0 10px 0 10px
+                    margin: 0
         .info-logement-droit
             display: flex
             align-items: flex-end
@@ -48,6 +56,32 @@
             &-hostrating
                 i
                     color: #FF6060
+        @media screen and ( max-width: $layout-breakpoint-small )
+            flex-direction: column
+            .info-logement-gauche, .info-logement-droit
+                width: 100%
+            .info-logement-gauche
+                &-tagscontainer
+                    flex-wrap: wrap
+                    gap: 10px
+
+                    &-tags
+                        width: 1rem
+                        min-height: 18px
+                        border-radius: 5px
+
+            .info-logement-droit
+                flex-direction: row-reverse
+                justify-content: space-between
+                align-items: center
+                &-host
+                    p
+                        font-size: 1rem
+                    img
+                        height: 3rem
+                &-hostrating
+                    font-size: 1rem
+
     .zoneDeroulant
         display: flex
         flex-direction: row

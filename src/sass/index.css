@@ -68,26 +68,37 @@ footer p {
 #fichelogement .info-logement {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 #fichelogement .info-logement .info-logement-gauche, #fichelogement .info-logement .info-logement-droit {
   width: 50%;
 }
+#fichelogement .info-logement .info-logement-gauche {
+  font-size: 13px;
+}
 #fichelogement .info-logement .info-logement-gauche h1 {
   color: #FF6060;
+  margin: 0;
+}
+#fichelogement .info-logement .info-logement-gauche h2 {
+  margin: 0;
 }
 #fichelogement .info-logement .info-logement-gauche-tagscontainer {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-top: 20px;
 }
 #fichelogement .info-logement .info-logement-gauche-tagscontainer-tags {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 100px;
-  padding: 0 10px 0 10px;
   border-radius: 10px;
   background-color: #FF6060;
   color: white;
+  padding: 0 10px 0 10px;
+  margin: 0;
 }
 #fichelogement .info-logement .info-logement-droit {
   display: flex;
@@ -113,6 +124,37 @@ footer p {
 }
 #fichelogement .info-logement .info-logement-droit-hostrating i {
   color: #FF6060;
+}
+@media screen and (max-width: 767.98px) {
+  #fichelogement .info-logement {
+    flex-direction: column;
+  }
+  #fichelogement .info-logement .info-logement-gauche, #fichelogement .info-logement .info-logement-droit {
+    width: 100%;
+  }
+  #fichelogement .info-logement .info-logement-gauche-tagscontainer {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #fichelogement .info-logement .info-logement-gauche-tagscontainer-tags {
+    width: 1rem;
+    min-height: 18px;
+    border-radius: 5px;
+  }
+  #fichelogement .info-logement .info-logement-droit {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #fichelogement .info-logement .info-logement-droit-host p {
+    font-size: 1rem;
+  }
+  #fichelogement .info-logement .info-logement-droit-host img {
+    height: 3rem;
+  }
+  #fichelogement .info-logement .info-logement-droit-hostrating {
+    font-size: 1rem;
+  }
 }
 #fichelogement .zoneDeroulant {
   display: flex;
@@ -324,6 +366,13 @@ footer p {
   color: white;
   border-radius: 5px;
   padding: 0 10px 0 10px;
+}
+@media screen and (max-width: 767.98px) {
+  .collapsible .collapsible-divbutton {
+    font-size: 1rem;
+    font-weight: 600;
+    height: 30px;
+  }
 }
 .collapsible .collapsible-divbutton .collapsible-button {
   cursor: pointer;
