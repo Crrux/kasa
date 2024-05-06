@@ -17,7 +17,7 @@ function Header() {
           to="/apropos"
           className={location.pathname === '/apropos' ? 'active' : ''}
         >
-          A propos
+          A Propos
         </Link>
       </nav>
     </header>
