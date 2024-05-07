@@ -69,6 +69,7 @@ footer p {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 #fichelogement .info-logement .info-logement-gauche, #fichelogement .info-logement .info-logement-droit {
   width: 50%;
@@ -142,6 +143,7 @@ footer p {
 @media screen and (max-width: 767.98px) {
   #fichelogement .info-logement {
     flex-direction: column;
+    margin-top: 10px;
   }
   #fichelogement .info-logement .info-logement-gauche, #fichelogement .info-logement .info-logement-droit {
     width: 100%;
