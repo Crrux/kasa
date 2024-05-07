@@ -94,6 +94,8 @@ footer p {
   justify-content: center;
   align-items: center;
   min-width: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 10px;
   background-color: #FF6060;
   color: white;
@@ -137,7 +139,6 @@ footer p {
     gap: 10px;
   }
   #fichelogement .info-logement .info-logement-gauche-tagscontainer-tags {
-    width: 1rem;
     min-height: 18px;
     border-radius: 5px;
   }
