@@ -371,21 +371,15 @@ footer p {
   color: white;
   border-radius: 5px 5px 5px 5px;
 }
-.collapsible .collapsible-divbutton p {
-  padding-left: 10px;
-}
-.collapsible .collapsible-divbutton.inactive {
-  animation: radius10to5 0.1s linear forwards;
-}
-.collapsible .collapsible-divbutton.active {
-  animation: radius5to10 0.1s linear forwards;
-}
 @media screen and (max-width: 767.98px) {
   .collapsible .collapsible-divbutton {
     font-size: 1rem;
     font-weight: 600;
     height: 30px;
   }
+}
+.collapsible .collapsible-divbutton p {
+  padding-left: 10px;
 }
 .collapsible .collapsible-divbutton .collapsible-button {
   cursor: pointer;
@@ -398,10 +392,10 @@ footer p {
   font-size: 1.5rem;
 }
 .collapsible .collapsible-divbutton .collapsible-button .icon-down-rotated {
-  animation: rotate-down 0.2s linear forwards;
+  animation: rotate-down 0.3s linear forwards;
 }
 .collapsible .collapsible-divbutton .collapsible-button .icon-up-rotated {
-  animation: rotate-up 0.2s linear forwards;
+  animation: rotate-up 0.3s linear forwards;
 }
 .collapsible .collapsible-content {
   z-index: 0;
@@ -419,14 +413,16 @@ footer p {
   }
 }
 .collapsible .collapsible-content p {
-  padding-left: 10px;
-}
-.collapsible .collapsible-content.inactive {
-  animation: radius10to5 0.1s linear forwards;
+  padding: 0 20px 0 20px;
 }
 .collapsible .collapsible-content.active {
-  animation: radius5to10 0.1s linear forwards;
   max-height: 500px;
+}
+.collapsible .collapsible-content.inactive, .collapsible .collapsible-divbutton.inactive {
+  animation: radius10to5 0.3s linear forwards;
+}
+.collapsible .collapsible-content.active, .collapsible .collapsible-divbutton.active {
+  animation: radius5to10 0.3s linear forwards;
 }
 
 @keyframes rotate-down {
@@ -451,11 +447,17 @@ footer p {
   }
   to {
     border-radius: 10px 10px 5px 5px;
+    @media screen and (max-width: 767.98px) {
+      border-radius: 5px 5px 5px 5px;
+    }
   }
 }
 @keyframes radius10to5 {
   from {
     border-radius: 10px 10px 5px 5px;
+    @media screen and (max-width: 767.98px) {
+      border-radius: 5px 5px 5px 5px;
+    }
   }
   to {
     border-radius: 5px 5px 5px 5px;

@@ -1,3 +1,7 @@
+$button-height: 50px
+$button-height-small: 30px
+$temps-animations: 0.3s
+
 .collapsible
     display: flex
     flex-direction: column
@@ -10,21 +14,17 @@
         justify-content: space-between
         align-items: center
         width: 100%
-        height: 50px
+        height: $button-height
         background-color: #FF6060
         color: white
         border-radius: 5px 5px 5px 5px
-        p
-            padding-left: 10px
-        &.inactive
-            animation: radius10to5 0.1s linear forwards
-        &.active
-            animation: radius5to10 0.1s linear forwards
-
         @media screen and ( max-width: $layout-breakpoint-small )
             font-size: 1rem
             font-weight: 600
-            height: 30px
+            height: $button-height-small
+        p
+            padding-left: 10px
+
         .collapsible-button
             cursor: pointer
             border: none
@@ -35,9 +35,9 @@
             margin-right: 10px
             font-size: 1.5rem
             .icon-down-rotated
-                animation: rotate-down 0.2s linear forwards
+                animation: rotate-down $temps-animations linear forwards
             .icon-up-rotated
-                animation: rotate-up 0.2s linear forwards
+                animation: rotate-up $temps-animations linear forwards
 
     .collapsible-content
         z-index: 0
@@ -45,18 +45,22 @@
         max-height: 0
         width: 100%
         overflow: hidden
-        transition: max-height 0.3s ease-out
-        padding-top: 50px
+        transition: max-height $temps-animations ease-out
+        padding-top: $button-height
         border-radius: 5px 5px 5px 5px
         @media screen and ( max-width: $layout-breakpoint-small )
-            padding-top: 30px
+            padding-top: $button-height-small
         p
-            padding-left: 10px
-        &.inactive
-            animation: radius10to5 0.1s linear forwards
+            padding: 0 20px 0 20px
+
         &.active
-            animation: radius5to10 0.1s linear forwards
             max-height: 500px
+
+    .collapsible-content, .collapsible-divbutton
+        &.inactive
+            animation: radius10to5 $temps-animations linear forwards
+        &.active
+            animation: radius5to10 $temps-animations linear forwards
 
 @keyframes rotate-down
     from
@@ -75,9 +79,13 @@
         border-radius: 5px 5px 5px 5px
     to
         border-radius: 10px 10px 5px 5px
+        @media screen and ( max-width: $layout-breakpoint-small )
+            border-radius: 5px 5px 5px 5px
 
 @keyframes radius10to5
     from
         border-radius: 10px 10px 5px 5px
+        @media screen and ( max-width: $layout-breakpoint-small )
+            border-radius: 5px 5px 5px 5px
     to
-        border-radius: 5px 5px 5px 5px
+            border-radius: 5px 5px 5px 5px
