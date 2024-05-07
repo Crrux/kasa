@@ -45,10 +45,10 @@ function Carousel({ data }) {
           ''
         )}
 
-        <button className="prev" onClick={() => plusSlides(-1)}>
+        <button className="prev" onClick={() => plusSlides(-1)} type="button">
           &#10094;
         </button>
-        <button className="next" onClick={() => plusSlides(1)}>
+        <button className="next" onClick={() => plusSlides(1)} type="button">
           &#10095;
         </button>
       </div>

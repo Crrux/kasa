@@ -68,7 +68,7 @@ function Fiche() {
             <div className="info-logement-droit">
               <div className="info-logement-droit-host">
                 <p>{logement.host?.name || 'Chargement...'}</p>
-                <img src={logement.host?.picture || ''} />
+                <img src={logement.host?.picture || ''} alt="Photo de l'hôte" />
               </div>
               <div className="info-logement-droit-hostrating">
                 <Rating stars={Number(logement.rating)}></Rating>

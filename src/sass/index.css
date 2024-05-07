@@ -420,6 +420,9 @@ footer p {
 .collapsible .collapsible-divbutton .collapsible-button .icon-up-rotated {
   animation: rotate-up 0.3s linear forwards;
 }
+.collapsible .collapsible-divbutton .collapsible-button:focus {
+  border: solid 1px rgba(246, 246, 246, 0.4509803922);
+}
 .collapsible .collapsible-content {
   z-index: 0;
   background-color: rgba(246, 246, 246, 0.4509803922);
