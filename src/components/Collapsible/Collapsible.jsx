@@ -12,7 +12,11 @@ function Collapsible({ titre, text, string }) {
   }
   return (
     <div className="collapsible">
-      <div className="collapsible-divbutton">
+      <div
+        className={`collapsible-divbutton ${
+          !isFirstClick ? (isActive ? 'active' : 'inactive') : ''
+        }`}
+      >
         <p>{titre}</p>
         <button
           type="button"
@@ -32,7 +36,11 @@ function Collapsible({ titre, text, string }) {
         </button>
       </div>
 
-      <div className={`collapsible-content ${isActive ? 'active' : ''}`}>
+      <div
+        className={`collapsible-content ${
+          !isFirstClick ? (isActive ? 'active' : 'inactive') : ''
+        }`}
+      >
         {text ? (
           <>
             {text.map((text) => (
