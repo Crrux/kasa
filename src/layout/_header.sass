@@ -3,17 +3,16 @@ header
     flex-direction: row
     justify-content: space-between
     margin: 45px auto 50px auto
+
     img
         height: 68px
-        @media (max-width: $layout-breakpoint-small)
-            height: 40px
+
     nav
         display: flex
         flex-direction: row
         justify-content: space-between
         gap: 30px
-        @media (max-width: $layout-breakpoint-small)
-            gap: 5px
+
         a
             display: flex
             justify-content: center
@@ -22,3 +21,10 @@ header
             font-size: 1em
         .active
             text-decoration: underline
+
+    @media (max-width: $layout-breakpoint-small)
+        margin: 20px auto 27px auto
+        img
+            height: 40px
+        nav
+            gap: 5px
