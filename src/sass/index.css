@@ -23,7 +23,7 @@ header nav a {
 header nav .active {
   text-decoration: underline;
 }
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   header {
     margin: 20px auto 27px auto;
   }
@@ -47,7 +47,7 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   footer {
     height: 220px;
   }
@@ -201,7 +201,7 @@ footer p {
 .APropos .APropos-deroulant .collapsible {
   width: 90%;
 }
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .APropos .APropos-deroulant .collapsible {
     width: 100%;
   }
@@ -299,7 +299,7 @@ footer p {
   width: 100%;
   font-size: 35px;
 }
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .Banner, .Banner h1 {
     height: 110px;
     text-align: left;
