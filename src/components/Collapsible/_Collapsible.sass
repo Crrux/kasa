@@ -17,7 +17,6 @@ $temps-animations: 0.3s
         height: $button-height
         background-color: #FF6060
         color: white
-        border-radius: 5px 5px 5px 5px
         @media screen and ( max-width: $layout-breakpoint-small )
             font-size: 1rem
             font-weight: 600
@@ -60,9 +59,9 @@ $temps-animations: 0.3s
 
     .collapsible-content, .collapsible-divbutton
         &.inactive
-            animation: radius10to5 $temps-animations linear forwards
-        &.active
             animation: radius5to10 $temps-animations linear forwards
+        &.active
+            animation: radius10to5 $temps-animations linear forwards
 
 @keyframes rotate-down
     from
@@ -78,12 +77,12 @@ $temps-animations: 0.3s
 
 @keyframes radius5to10
     from
-        border-radius: 5px 5px 5px 5px
+        border-radius: 5px
     to
-        border-radius: 10px 10px 5px 5px
+        border-radius: 10px
 
 @keyframes radius10to5
     from
-        border-radius: 10px 10px 5px 5px
+        border-radius: 10px
     to
-        border-radius: 5px 5px 5px 5px
+        border-radius: 5px

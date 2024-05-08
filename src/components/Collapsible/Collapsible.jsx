@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-function Collapsible({ titre, text, string }) {
+function Collapsible({ titre, text, string, radiusAnimation }) {
   const [isActive, setIsActive] = useState(false)
   const [isFirstClick, setIsFirstClick] = useState(true)
   const handleClick = () => {
@@ -14,8 +14,13 @@ function Collapsible({ titre, text, string }) {
     <div className="collapsible">
       <div
         className={`collapsible-divbutton ${
-          !isFirstClick ? (isActive ? 'active' : 'inactive') : ''
+          !isFirstClick && radiusAnimation
+            ? isActive
+              ? 'active'
+              : 'inactive'
+            : ''
         }`}
+        style={{ borderRadius: radiusAnimation ? '10px' : '5px' }}
       >
         <p>{titre}</p>
         <button
@@ -66,6 +71,7 @@ Collapsible.propTypes = {
   titre: PropTypes.string,
   string: PropTypes.string,
   text: PropTypes.array,
+  radiusAnimation: PropTypes.bool,
 }
 
 export default Collapsible
