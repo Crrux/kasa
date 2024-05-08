@@ -208,6 +208,9 @@ footer p {
 }
 
 .mainError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: red;
   text-align: center;
   font-weight: 600;
@@ -219,6 +222,7 @@ footer p {
 .mainError p {
   font-size: 1.5rem;
   margin-bottom: 5rem;
+  width: 80%;
 }
 .mainError a {
   text-decoration: underline;
