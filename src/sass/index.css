@@ -398,7 +398,6 @@ footer p {
   height: 50px;
   background-color: #FF6060;
   color: white;
-  border-radius: 5px 5px 5px 5px;
 }
 @media screen and (max-width: 767.98px) {
   .collapsible .collapsible-divbutton {
@@ -451,10 +450,10 @@ footer p {
   max-height: 500px;
 }
 .collapsible .collapsible-content.inactive, .collapsible .collapsible-divbutton.inactive {
-  animation: radius10to5 0.3s linear forwards;
+  animation: radius5to10 0.3s linear forwards;
 }
 .collapsible .collapsible-content.active, .collapsible .collapsible-divbutton.active {
-  animation: radius5to10 0.3s linear forwards;
+  animation: radius10to5 0.3s linear forwards;
 }
 
 @keyframes rotate-down {
@@ -475,18 +474,18 @@ footer p {
 }
 @keyframes radius5to10 {
   from {
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
   }
   to {
-    border-radius: 10px 10px 5px 5px;
+    border-radius: 10px;
   }
 }
 @keyframes radius10to5 {
   from {
-    border-radius: 10px 10px 5px 5px;
+    border-radius: 10px;
   }
   to {
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
   }
 }
 :root {
