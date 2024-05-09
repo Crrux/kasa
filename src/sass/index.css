@@ -369,18 +369,20 @@ footer p {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  top: 278px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 45px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 767.98px) {
+  .slideshow-container .prev, .slideshow-container .next {
+    top: 105.5px;
+  }
 }
 .slideshow-container .prev:hover, .slideshow-container .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
