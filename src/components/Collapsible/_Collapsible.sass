@@ -17,10 +17,12 @@ $temps-animations: 0.3s
         height: $button-height
         background-color: #FF6060
         color: white
+        border-radius: 10px
         @media screen and ( max-width: $layout-breakpoint-small )
             font-size: 1rem
             font-weight: 600
             height: $button-height-small
+            border-radius: 5px
         p
             padding-left: 10px
 
@@ -59,9 +61,11 @@ $temps-animations: 0.3s
 
     .collapsible-content, .collapsible-divbutton
         &.inactive
-            animation: radius5to10 $temps-animations linear forwards
+            @media screen and ( min-width: $layout-breakpoint-tablet-min )
+                animation: radius5to10 $temps-animations linear forwards
         &.active
-            animation: radius10to5 $temps-animations linear forwards
+            @media screen and ( min-width: $layout-breakpoint-tablet-min )
+                animation: radius10to5 $temps-animations linear forwards
 
 @keyframes rotate-down
     from
