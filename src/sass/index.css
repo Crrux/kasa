@@ -322,18 +322,15 @@ footer p {
   position: relative;
   margin: auto;
   display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
-  max-height: 600px;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 600px;
+  width: 100%;
   align-items: center;
   border-radius: 25px;
   overflow: hidden;
 }
 @media screen and (max-width: 767.98px) {
   .slideshow-container {
-    max-height: 400px;
+    height: 400px;
     border-radius: 10px;
   }
 }
@@ -398,12 +395,14 @@ footer p {
   height: 50px;
   background-color: #FF6060;
   color: white;
+  border-radius: 10px;
 }
 @media screen and (max-width: 767.98px) {
   .collapsible .collapsible-divbutton {
     font-size: 1rem;
     font-weight: 600;
     height: 30px;
+    border-radius: 5px;
   }
 }
 .collapsible .collapsible-divbutton p {
@@ -449,11 +448,15 @@ footer p {
 .collapsible .collapsible-content.active {
   max-height: 500px;
 }
-.collapsible .collapsible-content.inactive, .collapsible .collapsible-divbutton.inactive {
-  animation: radius5to10 0.3s linear forwards;
+@media screen and (min-width: 768px) {
+  .collapsible .collapsible-content.inactive, .collapsible .collapsible-divbutton.inactive {
+    animation: radius5to10 0.3s linear forwards;
+  }
 }
-.collapsible .collapsible-content.active, .collapsible .collapsible-divbutton.active {
-  animation: radius10to5 0.3s linear forwards;
+@media screen and (min-width: 768px) {
+  .collapsible .collapsible-content.active, .collapsible .collapsible-divbutton.active {
+    animation: radius10to5 0.3s linear forwards;
+  }
 }
 
 @keyframes rotate-down {
