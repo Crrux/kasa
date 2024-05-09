@@ -378,6 +378,7 @@ footer p {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding: 0 10px 10px 10px;
 }
 @media screen and (max-width: 767.98px) {
   .slideshow-container .prev, .slideshow-container .next {
