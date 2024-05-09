@@ -1,4 +1,4 @@
-import { useParams, useNavigate, redirect } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Collapsible from '../../components/Collapsible/Collapsible'
@@ -20,11 +20,10 @@ function Fiche() {
           setLogements(logement)
         } else {
           logementNotFound = true
-          throw new Error('Logement not found') // Create and throw an error
+          throw new Error('Logement not found')
         }
       } catch (error) {
         if (logementNotFound) {
-          // return redirect('/404')
           navigate(`/LogementNotFound-${id}`)
         }
       }
