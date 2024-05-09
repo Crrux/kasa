@@ -325,21 +325,43 @@ footer p {
   height: 600px;
   width: 100%;
   align-items: center;
-  border-radius: 25px;
-  overflow: hidden;
 }
 @media screen and (max-width: 767.98px) {
   .slideshow-container {
     height: 400px;
-    border-radius: 10px;
   }
 }
 .slideshow-container .mySlides {
+  position: relative;
+  width: 100%;
+}
+.slideshow-container .mySlides .myPictures {
   display: none;
   width: 100%;
 }
-.slideshow-container .mySlides img {
+.slideshow-container .mySlides .myPictures .overflowtest {
+  display: flex;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+@media screen and (max-width: 767.98px) {
+  .slideshow-container .mySlides .myPictures .overflowtest {
+    border-radius: 10px;
+  }
+}
+.slideshow-container .mySlides .myPictures .overflowtest img {
   width: 100%;
+}
+.slideshow-container .mySlides .myPictures--indexation {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
 }
 .slideshow-container .prev, .slideshow-container .next {
   background: none;
