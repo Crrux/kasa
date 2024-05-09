@@ -328,7 +328,7 @@ footer p {
 }
 @media screen and (max-width: 767.98px) {
   .slideshow-container {
-    height: 400px;
+    height: 255px;
   }
 }
 .slideshow-container .mySlides {
@@ -351,6 +351,7 @@ footer p {
 @media screen and (max-width: 767.98px) {
   .slideshow-container .mySlides .myPictures .overflowtest {
     border-radius: 10px;
+    max-height: 255px;
   }
 }
 .slideshow-container .mySlides .myPictures .overflowtest img {
