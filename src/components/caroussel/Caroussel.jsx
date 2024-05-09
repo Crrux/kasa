@@ -36,7 +36,7 @@ function Carousel({ data }) {
           <>
             {data.map((pictures) => (
               <div key={pictures} className="myPictures fade">
-                <div className="overflowtest">
+                <div className="myPictures--imgcontainer">
                   <img src={pictures} />
                 </div>
 

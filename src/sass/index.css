@@ -322,7 +322,7 @@ footer p {
   position: relative;
   margin: auto;
   display: flex;
-  height: 600px;
+  height: 255px;
   width: 100%;
   align-items: center;
 }
@@ -339,22 +339,22 @@ footer p {
   display: none;
   width: 100%;
 }
-.slideshow-container .mySlides .myPictures .overflowtest {
+.slideshow-container .mySlides .myPictures .myPictures--imgcontainer {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 600px;
+  max-height: 255px;
   overflow: hidden;
   border-radius: 25px;
 }
 @media screen and (max-width: 767.98px) {
-  .slideshow-container .mySlides .myPictures .overflowtest {
+  .slideshow-container .mySlides .myPictures .myPictures--imgcontainer {
     border-radius: 10px;
     max-height: 255px;
   }
 }
-.slideshow-container .mySlides .myPictures .overflowtest img {
+.slideshow-container .mySlides .myPictures .myPictures--imgcontainer img {
   width: 100%;
 }
 .slideshow-container .mySlides .myPictures--indexation {

@@ -1,3 +1,6 @@
+$container-height: 600px
+$container-height: 255px
+
 .Carroussel
     display: none
 
@@ -6,12 +9,12 @@
     position: relative
     margin: auto
     display: flex
-    height: 600px
+    height: $container-height
     width: 100%
     align-items: center
 
     @media screen and ( max-width: $layout-breakpoint-small )
-        height: 255px
+        height: $container-height
 
     .mySlides
         position: relative
@@ -19,16 +22,16 @@
         .myPictures
             display: none
             width: 100%
-            .overflowtest
+            .myPictures--imgcontainer
                 display: flex
                 align-items: center
                 height: fit-content
-                max-height: 600px
+                max-height: $container-height
                 overflow: hidden
                 border-radius: 25px
                 @media screen and ( max-width: $layout-breakpoint-small )
                     border-radius: 10px
-                    max-height: 255px
+                    max-height: $container-height
                 img
                     width: 100%
 
