@@ -1,5 +1,5 @@
 $container-height: 600px
-$container-height: 255px
+$container-height-mobile: 255px
 
 .Carroussel
     display: none
@@ -14,7 +14,7 @@ $container-height: 255px
     align-items: center
 
     @media screen and ( max-width: $layout-breakpoint-small )
-        height: $container-height
+        height: $container-height-mobile
 
     .mySlides
         position: relative
@@ -31,7 +31,7 @@ $container-height: 255px
                 border-radius: 25px
                 @media screen and ( max-width: $layout-breakpoint-small )
                     border-radius: 10px
-                    max-height: $container-height
+                    max-height: $container-height-mobile
                 img
                     width: 100%
 

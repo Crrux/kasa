@@ -322,7 +322,7 @@ footer p {
   position: relative;
   margin: auto;
   display: flex;
-  height: 255px;
+  height: 600px;
   width: 100%;
   align-items: center;
 }
@@ -344,7 +344,7 @@ footer p {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 255px;
+  max-height: 600px;
   overflow: hidden;
   border-radius: 25px;
 }
