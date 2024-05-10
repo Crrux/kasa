@@ -11,7 +11,6 @@ import Home from './pages/home/home'
 import Fiche from './pages/fiche_logement/fichelogement.jsx'
 import APropos from './pages/APropos/APropos.jsx'
 import Error from './pages/NotFound/NotFound.jsx'
-import Test from './pages/test/test.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/APropos" element={<APropos />} />
         <Route path="/fichelogement/:id" element={<Fiche />} />
         <Route path="*" element={<Error />} />
-        <Route path="/test" element={<Test />} />
       </Routes>
       <Footer />
     </Router>
