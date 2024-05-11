@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-function Carousel({ data }) {
+function Slideshow({ data }) {
   const [slideIndex, setSlideIndex] = useState(1)
 
   useEffect(() => {
@@ -69,8 +69,8 @@ function Carousel({ data }) {
   )
 }
 
-Carousel.propTypes = {
+Slideshow.propTypes = {
   data: PropTypes.array,
 }
 
-export default Carousel
+export default Slideshow

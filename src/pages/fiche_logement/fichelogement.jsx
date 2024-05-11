@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 import Collapsible from '../../components/Collapsible/Collapsible'
 import Rating from '../../components/Rating/Rating'
-import Carousel from '../../components/Caroussel/Caroussel'
+import Slideshow from '../../components/Slideshow/Slideshow.jsx'
 
 function Fiche() {
   let { id } = useParams()
@@ -36,7 +36,7 @@ function Fiche() {
       {logement ? (
         <>
           {logement.pictures ? (
-            <Carousel data={logement.pictures}></Carousel>
+            <Slideshow data={logement.pictures}></Slideshow>
           ) : (
             ''
           )}
