@@ -1,11 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "conditions": {
-        "Method": ["GET"]
-      }
+      "source": "/:path*",
+      "destination": "/index.html"
     }
   ]
 }
