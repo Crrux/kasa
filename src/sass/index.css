@@ -214,6 +214,7 @@ footer p {
   color: red;
   text-align: center;
   font-weight: 600;
+  min-height: 61vh;
 }
 .mainError h1 {
   font-size: 6rem;
